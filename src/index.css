@@ -70,13 +70,13 @@
   background-color: lightgray;
 
 }
-.description{
+.cityWeather{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.description>h3{
+.cityWeather>h3{
   font-size: 15px;
   font-weight: 300;
   text-transform: capitalize; 

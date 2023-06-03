@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactDOM } from "react";
+import Description from "./Components/Description";
 import hotBg from './assets/hot.jpg';
 import coldBg from './assets/cold.jpg';
 
@@ -13,7 +14,7 @@ function App() {
           <button>℉</button>
         </div>
         <div className="section section_temperature">
-          <div className="description">
+          <div className="cityWeather">
             <h3>pune,india</h3>
             <img src="http://openweathermap.org/img/wn/04n@2x.png" alt="weather"></img>
             <h3>Cloudy</h3>
@@ -23,6 +24,7 @@ function App() {
           </div>
         </div>
         {/* bottom discription */}
+        <Description />
       </div>
     </div>
     </div>
