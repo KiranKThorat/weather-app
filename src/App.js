@@ -1,8 +1,10 @@
 import hotBg from "./assets/hot.jpg";
 import coldBg from "./assets/cold.jpg";
+import background from "./assets/background.jpg"
 import Descriptions from "./components/Descriptions";
 import { useEffect, useState } from "react";
 import { getFormattedWeatherData } from "./weatherService";
+import {TiWeatherPartlySunny} from "react-icons/ti" ;
 
 function App() {
   const [city, setCity] = useState("Pune");
@@ -41,10 +43,14 @@ function App() {
   };
 
   return (
-    <div className="app" style={{ backgroundImage: `url(${bg})` }}>
+    <div className="app" style={{ backgroundImage: `url(${background})` }}>
       <div className="overlay">
         {weather && (
           <div className="container">
+          <div className="section_logo">
+            <TiWeatherPartlySunny size={80} />
+            <h1>AcuWeather</h1>
+          </div>
             <div className="section section__inputs">
               <input
                 onKeyDown={enterKeyPressed}

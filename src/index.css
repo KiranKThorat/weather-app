@@ -43,7 +43,14 @@
   border-radius: 0.4rem;
   color: white;
 }
+ .section_logo{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding: 1rem 1rem;
+  align-items: center;
 
+ }
 .section__inputs, .section__temperature {
   display: flex;
   align-items: center;
